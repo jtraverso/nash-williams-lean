@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.FracStab.Rules
-import RequestProject.FracStab.Structure
+module
+
+public import RequestProject.FracStab.Rules
+public import RequestProject.FracStab.Structure
+
+@[expose] public section
 
 /-!
 # Setting up the proof of Theorem 10.9

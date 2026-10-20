@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.GeometryDeletion
-import PartitionedTriangleAbsorption.SignedHinge.Main
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.GeometryDeletion
+public import PartitionedTriangleAbsorption.SignedHinge.Main
+
+@[expose] public section
 
 /-!
 # Bounded terminals and their use in the private ledger

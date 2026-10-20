@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.CompleteResiduals
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.CompleteResiduals
+
+@[expose] public section
 
 /-! # A bounded signed inverse on every complete allowed F₁/F₂ blowup
 

@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.SignlessSupport
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteCoordinates
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.SignlessSupport
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteCoordinates
+
+@[expose] public section
 
 /-! # The explicit internal inverse on actual internal edge coordinates -/
 

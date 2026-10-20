@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.FracStab.GlobalClaims
-import RequestProject.FracStab.Normal
+module
+
+public import RequestProject.FracStab.GlobalClaims
+public import RequestProject.FracStab.Normal
+
+@[expose] public section
 
 /-!
 # The global part of Theorem 10.9: setting and the key gadget

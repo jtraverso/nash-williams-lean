@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.FracStab.StabConc
-import RequestProject.FracStab.StabW
+module
+
+public import RequestProject.FracStab.StabConc
+public import RequestProject.FracStab.StabW
+
+@[expose] public section
 
 /-!
 # Value stability for thin weightings (Lemma 8.10, in the form needed for Lemma 9.5)

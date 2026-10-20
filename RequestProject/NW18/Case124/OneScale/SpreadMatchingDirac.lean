@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import Mathlib
+module
+
+public import Mathlib
+
+@[expose] public section
 
 /- Provenance: verbatim copy of `Contrib/SpreadMatchingDirac.lean` from the supplied packet
 `nw_one_scale_balanced_bases_20261013.tar.gz`; only this comment is added. -/

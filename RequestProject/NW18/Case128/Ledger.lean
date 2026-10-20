@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case128.LocalMin
-import PartitionedTriangleAbsorption.ExceptionalQuotaStage142
+module
+
+public import RequestProject.NW18.Case128.LocalMin
+public import PartitionedTriangleAbsorption.ExceptionalQuotaStage142
+
+@[expose] public section
 
 /-!
 # Case (5): the quota ledger of a family of edge-disjoint triangles

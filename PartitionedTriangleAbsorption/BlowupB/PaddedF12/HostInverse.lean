@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.CompleteCopyInverse
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.SignedTransfer
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.InverseEstimates
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.CompleteCopyInverse
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.SignedTransfer
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.InverseEstimates
+
+@[expose] public section
 
 /-!
 # A bounded signed inverse in the actual F₁/F₂ host

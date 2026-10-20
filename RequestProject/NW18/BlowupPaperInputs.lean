@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case125.F0Producer
-import RequestProject.NW18.Case126.FracDivF1
-import RequestProject.NW18.Case127.FracDivF2
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.RoutedPaper
+module
+
+public import RequestProject.NW18.Case125.F0Producer
+public import RequestProject.NW18.Case126.FracDivF1
+public import RequestProject.NW18.Case127.FracDivF2
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.RoutedPaper
+
+@[expose] public section
 
 /-!
 # Typed blowup inputs for the Nash-Williams application

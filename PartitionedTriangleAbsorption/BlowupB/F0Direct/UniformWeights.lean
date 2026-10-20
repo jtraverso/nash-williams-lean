@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.GeometryDeletion
-import PartitionedTriangleAbsorption.F0RigidBoost
-import PartitionedTriangleAbsorption.IntegerCertificate.Combination
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.GeometryDeletion
+public import PartitionedTriangleAbsorption.F0RigidBoost
+public import PartitionedTriangleAbsorption.IntegerCertificate.Combination
+
+@[expose] public section
 
 /-!
 # Uniform physical seed weights

@@ -3,11 +3,15 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.LevelReserveF1
-import RequestProject.NW18.Case126.RepairedWeightsF1
-import RequestProject.NW18.Case126.LevelPackingF1
-import RequestProject.NW18.Case126.SetNibbleF1
-import PartitionedTriangleAbsorption.F1GraphReserveStage234
+module
+
+public import RequestProject.NW18.Case126.LevelReserveF1
+public import RequestProject.NW18.Case126.RepairedWeightsF1
+public import RequestProject.NW18.Case126.LevelPackingF1
+public import RequestProject.NW18.Case126.SetNibbleF1
+public import PartitionedTriangleAbsorption.F1GraphReserveStage234
+
+@[expose] public section
 
 /-!
 # The protected `F₁` level, part 1: pool capacity, charge demand, repair, weights, packing

@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.ReturnedBasic
-import RequestProject.NW18.Case124.BoundedCore.RoundSizes
-import Mathlib.Tactic.Tauto
+module
+
+public import PartitionedTriangleAbsorption.ReturnedBasic
+public import RequestProject.NW18.Case124.BoundedCore.RoundSizes
+public import Mathlib.Tactic.Tauto
+
+@[expose] public section
 
 /-! Physical output of a nibble with star monitors. All small stars are
 included; this bridge uses no decomposition theorem as an external premise. -/

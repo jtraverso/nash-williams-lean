@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.GuardedTemplates
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.GuardedTemplates
+
+@[expose] public section
 
 /-!
 # Sparse families of copies of templates on an arbitrary finite vertex type

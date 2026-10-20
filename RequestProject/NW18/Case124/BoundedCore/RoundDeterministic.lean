@@ -3,13 +3,17 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.BoundedCore.RoundAssembly
-import RequestProject.NW18.Case124.BoundedCore.CrossResK3
-import RequestProject.NW18.Case124.BoundedCore.RoundTargetAssembly
-import RequestProject.NW18.Case124.BoundedCore.RoundGeometry
-import RequestProject.NW18.Case124.BoundedCore.ReserveTypicality
-import RequestProject.NW18.Case124.BoundedCore.ApexIncidence
-import RequestProject.NW18.Case124.ReserveCover.Greedy
+module
+
+public import RequestProject.NW18.Case124.BoundedCore.RoundAssembly
+public import RequestProject.NW18.Case124.BoundedCore.CrossResK3
+public import RequestProject.NW18.Case124.BoundedCore.RoundTargetAssembly
+public import RequestProject.NW18.Case124.BoundedCore.RoundGeometry
+public import RequestProject.NW18.Case124.BoundedCore.ReserveTypicality
+public import RequestProject.NW18.Case124.BoundedCore.ApexIncidence
+public import RequestProject.NW18.Case124.ReserveCover.Greedy
+
+@[expose] public section
 
 /-!
 # One protected round from a concrete sample, packing and leftover bound

@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.L3F0Hoeffding
+module
+
+public import PartitionedTriangleAbsorption.L3F0Hoeffding
+
+@[expose] public section
 
 /-!
 # Second moment of block statistics under a product Bernoulli measure

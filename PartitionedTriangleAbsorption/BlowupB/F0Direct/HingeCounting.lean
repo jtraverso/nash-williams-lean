@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.HingeTemplates
-import PartitionedTriangleAbsorption.PhysicalHingeSupply.Supply
-import Mathlib.Data.Fintype.BigOperators
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.HingeTemplates
+public import PartitionedTriangleAbsorption.PhysicalHingeSupply.Supply
+public import Mathlib.Data.Fintype.BigOperators
+
+@[expose] public section
 
 /-! # Counting physical hinges from bounded fibres of labelled templates
 

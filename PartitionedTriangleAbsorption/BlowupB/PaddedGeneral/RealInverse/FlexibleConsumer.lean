@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.Uniform
-import PartitionedTriangleAbsorption.BlowupB.Flex.WholeDef
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.Uniform
+public import PartitionedTriangleAbsorption.BlowupB.Flex.WholeDef
+
+@[expose] public section
 
 /-! The family-dependent real inverse and an existing flexible absorber can use
 the same scales. Unlike `decomposition_uniform`, the reserve here shrinks with

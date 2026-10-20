@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Fixer
-import RequestProject.NW18.Case126.Clean126
-import RequestProject.NW18.Case125.Residual
+module
+
+public import RequestProject.NW18.Case126.Fixer
+public import RequestProject.NW18.Case126.Clean126
+public import RequestProject.NW18.Case125.Residual
+
+@[expose] public section
 
 /-!
 # The final `F₁`-blowup and the application of Theorem 14.7

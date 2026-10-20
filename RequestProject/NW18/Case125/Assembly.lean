@@ -3,12 +3,16 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case125.Theorem146
-import RequestProject.NW18.Case125.Lemma159
-import RequestProject.NW18.Case125.Lemma156
-import RequestProject.NW18.Case125.SideClose
-import RequestProject.NW18.Case125.Reserve
-import RequestProject.NW18.Case125.Residual
+module
+
+public import RequestProject.NW18.Case125.Theorem146
+public import RequestProject.NW18.Case125.Lemma159
+public import RequestProject.NW18.Case125.Lemma156
+public import RequestProject.NW18.Case125.SideClose
+public import RequestProject.NW18.Case125.Reserve
+public import RequestProject.NW18.Case125.Residual
+
+@[expose] public section
 
 /-!
 # Proof of Theorem 12.5 (case (2) of §12.2)

@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Claim1594W
+module
+
+public import RequestProject.NW18.Case126.Claim1594W
+
+@[expose] public section
 
 /-!
 # Lemma 15.9 with a protected edge set

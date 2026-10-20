@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteSumModel
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealInternalInverse
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteSumModel
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealInternalInverse
+
+@[expose] public section
 
 /-! # The physical incidence table of every complete-crossing mixed graph -/
 

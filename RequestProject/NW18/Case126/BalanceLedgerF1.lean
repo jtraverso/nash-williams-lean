@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.RobustWeightingF1
-import RequestProject.NW18.Case126.CrossReserveF1
-import PartitionedTriangleAbsorption.F1BalanceGateStage228
-import Mathlib.Combinatorics.SimpleGraph.DegreeSum
+module
+
+public import RequestProject.NW18.Case126.RobustWeightingF1
+public import RequestProject.NW18.Case126.CrossReserveF1
+public import PartitionedTriangleAbsorption.F1BalanceGateStage228
+public import Mathlib.Combinatorics.SimpleGraph.DegreeSum
+
+@[expose] public section
 
 /-!
 # Theorem 14.7 for `F₁`: the signed charge ledger of the ACTUAL punctured level

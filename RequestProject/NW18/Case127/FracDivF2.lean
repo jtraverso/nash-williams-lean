@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.FracDivF1
+module
+
+public import RequestProject.NW18.Case126.FracDivF1
+
+@[expose] public section
 
 /-!
 # Claim 14.7.2 for `F₂`: fractional `F₂`-divisibility of an idealized `F₂`-blowup

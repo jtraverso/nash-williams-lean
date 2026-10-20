@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.FlexibleConsumer
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedBridge
-import PartitionedTriangleAbsorption.BlowupB.KeevashReserve
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.FlexibleConsumer
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedBridge
+public import PartitionedTriangleAbsorption.BlowupB.KeevashReserve
+
+@[expose] public section
 
 /-! The existing typed interface follows from the proved real inverse and a
 flexible geometric family certificate. KeevashTypedSpec is the CONCLUSION,

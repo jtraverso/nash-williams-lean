@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.SubgraphLift
-import RequestProject.NW18.Lemma116
-import RequestProject.FracStab.Main
+module
+
+public import RequestProject.NW18.SubgraphLift
+public import RequestProject.NW18.Lemma116
+public import RequestProject.FracStab.Main
+
+@[expose] public section
 
 /-!
 # Theorem 2.6 (robust regular fractional decompositions), from Theorem 1.6

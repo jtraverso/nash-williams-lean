@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.FracStab.BipGraph
-import RequestProject.FracStab.BipCut
-import RequestProject.FracStab.BipQuadMain
-import RequestProject.FracStab.Charge
+module
+
+public import RequestProject.FracStab.BipGraph
+public import RequestProject.FracStab.BipCut
+public import RequestProject.FracStab.BipQuadMain
+public import RequestProject.FracStab.Charge
+
+@[expose] public section
 
 /-!
 # Lemma 9.5: the extremal neighbourhood is nearly bipartite

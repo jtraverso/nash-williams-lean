@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.ReserveWitness
-import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.EffectiveTail
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.ReserveWitness
+public import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.EffectiveTail
+
+@[expose] public section
 
 /-!
 # Simultaneous decomposable reserve with a polynomial threshold

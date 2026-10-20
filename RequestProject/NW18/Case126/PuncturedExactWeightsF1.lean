@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.BalancedWeightingF1
-import PartitionedTriangleAbsorption.F1PaddedWeightsStage233
+module
+
+public import RequestProject.NW18.Case126.BalancedWeightingF1
+public import PartitionedTriangleAbsorption.F1PaddedWeightsStage233
+
+@[expose] public section
 
 /-!
 # Exact positive weights on the actual punctured `F₁` level (small child, zero balance)

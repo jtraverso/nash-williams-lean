@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.BoundedCore.CoreAbsorber
-import RequestProject.NW18.Case124.BoundedCore.RoundTransport
+module
+
+public import RequestProject.NW18.Case124.BoundedCore.CoreAbsorber
+public import RequestProject.NW18.Case124.BoundedCore.RoundTransport
+
+@[expose] public section
 
 /-!
 # Theorem 1.8 from the single protected cover-down round

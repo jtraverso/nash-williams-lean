@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.WalkCounts
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.SignlessSupport
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateIncidence
-import Mathlib.Tactic.FinCases
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.WalkCounts
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.SignlessSupport
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateIncidence
+public import Mathlib.Tactic.FinCases
+
+@[expose] public section
 
 /-!
 # From diagonal walk counts to a supported incidence inverse

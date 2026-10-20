@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.Vortex.TupleStat
-import RequestProject.NW18.Case124.Vortex.SecondMoment
+module
+
+public import RequestProject.NW18.Case124.Vortex.TupleStat
+public import RequestProject.NW18.Case124.Vortex.SecondMoment
+
+@[expose] public section
 
 /-!
 # One random child of a vortex level: simultaneous Hoeffding and Chebyshev control

@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.FracStab.Assemble
-import RequestProject.FracStab.Dual
-import RequestProject.NW18.Defs
+module
+
+public import RequestProject.FracStab.Assemble
+public import RequestProject.FracStab.Dual
+public import RequestProject.NW18.Defs
+
+@[expose] public section
 
 /-!
 # Theorem 1.6 (fractional stability) from Theorem 10.9

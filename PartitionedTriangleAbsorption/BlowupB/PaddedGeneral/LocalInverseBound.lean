@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalInverse
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalInverse
+
+@[expose] public section
 
 /-! Family-dependent complete inverse and its host consumer. This module does
 not assert an inverse producer. The established fixed-constant interfaces remain

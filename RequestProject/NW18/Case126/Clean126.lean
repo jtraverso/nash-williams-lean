@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Extremal126
-import RequestProject.NW18.Case125.Lemma156
+module
+
+public import RequestProject.NW18.Case126.Extremal126
+public import RequestProject.NW18.Case125.Lemma156
+
+@[expose] public section
 
 /-!
 # Removing the abnormal edges (Claim 12.6.7)

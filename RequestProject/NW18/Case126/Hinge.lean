@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Ideal
-import RequestProject.NW18.Case125.Claim1464Case2
+module
+
+public import RequestProject.NW18.Case126.Ideal
+public import RequestProject.NW18.Case125.Claim1464Case2
+
+@[expose] public section
 
 /-!
 # Six-vertex hinges in an idealized `F`-blowup (Claim 14.7.4)

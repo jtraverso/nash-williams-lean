@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.Fractional.FourPoint
+module
+
+public import RequestProject.Fractional.FourPoint
+
+@[expose] public section
 
 /-!
 # Lemma 4.29 of Delcourt–Postle (the value lemma), in Lagrangian form

@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.F0OrderedBridge
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.Theorem146
+module
+
+public import PartitionedTriangleAbsorption.F0OrderedBridge
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.Theorem146
+
+@[expose] public section
 
 /-! The proved F₀ theorem with the ordered-pair non-extremality convention.
 This is a local 4.35 interface, not an import of the independent NW 4.28 project. -/

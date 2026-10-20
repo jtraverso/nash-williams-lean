@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.Fractional.Global
+module
+
+public import RequestProject.Fractional.Global
+
+@[expose] public section
 
 /-!
 # Proposition 4.7: perturbing to a nonzero untied weighting

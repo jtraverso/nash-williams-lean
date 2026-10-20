@@ -3,13 +3,17 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.TorsionChain
-import Mathlib.Data.Finset.Prod
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Tactic.SplitIfs
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.TorsionChain
+public import Mathlib.Data.Finset.Prod
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Tactic.SplitIfs
+
+@[expose] public section
 
 /-!
 # The universal torsion chain as finite libraries
@@ -178,7 +182,7 @@ theorem occurrence_card_le (N : Nat) (eps : Nat → Bool) (r : Nat) (a : Atom) :
       exact localSlot_injective hiv hjv
         ((mem_atoms hiv).mp (mem_filter.mp hi).2)
         ((mem_atoms hjv).mp (mem_filter.mp hj).2) heq)
-  simpa [cap] using h
+  cases a <;> simpa [cap] using h
 
 /-- Distinguish private tokens from the optional old atom. -/
 def isToken : Atom → Bool

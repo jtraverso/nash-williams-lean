@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import Mathlib.Analysis.Normed.Module.FiniteDimension
-import Mathlib.LinearAlgebra.FreeModule.PID
-import Mathlib.Algebra.Module.Projective
-import Mathlib.Tactic
+module
+
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
+public import Mathlib.LinearAlgebra.FreeModule.PID
+public import Mathlib.Algebra.Module.Projective
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! Sections of the actual image of a fixed matrix. In particular, neither
 global compatibility nor a local profile compatibility may be omitted.

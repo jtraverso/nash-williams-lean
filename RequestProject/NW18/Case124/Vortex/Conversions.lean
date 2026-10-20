@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.Vortex.Chain
-import RequestProject.NW18.Sampling.Glue
+module
+
+public import RequestProject.NW18.Case124.Vortex.Chain
+public import RequestProject.NW18.Sampling.Glue
+
+@[expose] public section
 
 /-!
 # From the level invariant to the literal graph statements on `G[U]`

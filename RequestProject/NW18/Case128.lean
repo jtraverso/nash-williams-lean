@@ -3,11 +3,15 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Defs
-import PartitionedTriangleAbsorption.CleanupGeometryStage140
-import PartitionedTriangleAbsorption.FourColourConsumerStage84
-import PartitionedTriangleAbsorption.ExceptionalGeometryStage141
-import PartitionedTriangleAbsorption.CommonClassSupply
+module
+
+public import RequestProject.NW18.Defs
+public import PartitionedTriangleAbsorption.CleanupGeometryStage140
+public import PartitionedTriangleAbsorption.FourColourConsumerStage84
+public import PartitionedTriangleAbsorption.ExceptionalGeometryStage141
+public import PartitionedTriangleAbsorption.CommonClassSupply
+
+@[expose] public section
 
 /-!
 # Case (5) of §12.2 (Theorem 12.8): the route through the local F3 consumers

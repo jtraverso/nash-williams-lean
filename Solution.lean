@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import Mathlib
-import RequestProject.NW18.PaperIIAssembly
-import RequestProject.Fractional.Final
-import RequestProject.FracStab.Main
+module
+
+public import Mathlib
+public import RequestProject.NW18.PaperIIAssembly
+public import RequestProject.Fractional.Final
+public import RequestProject.FracStab.Main
+
+@[expose] public section
 
 /-!
 # Proofs of the statements in `Challenge.lean`

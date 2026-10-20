@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.MatrixSections
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalProfiles
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.MatrixSections
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalProfiles
+
+@[expose] public section
 
 /-! A bounded linear section for the actual local-profile matrix. The constant
 is selected before the host, and the coefficients sum to zero in each class.

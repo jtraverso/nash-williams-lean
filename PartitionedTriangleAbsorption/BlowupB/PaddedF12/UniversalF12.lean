@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.FamilyRefiner
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ExplicitLedger
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.UniformScales
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.FamilyRefiner
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ExplicitLedger
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.UniformScales
+
+@[expose] public section
 
 /-!
 # Universal F1 and F2 absorbers in guarded extendible hosts

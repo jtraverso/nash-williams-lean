@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalInverseBound
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalInverseBound
+
+@[expose] public section
 
 /-! Repair after deleting a decomposable reserve with explicit family-dependent
 budgets. The producer and the final choice of the global pipeline thresholds

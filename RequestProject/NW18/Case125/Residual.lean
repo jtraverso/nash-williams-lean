@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case125.Theorem146
-import RequestProject.NW18.Case125.SideCost
+module
+
+public import RequestProject.NW18.Case125.Theorem146
+public import RequestProject.NW18.Case125.SideCost
+
+@[expose] public section
 
 /-!
 # The cleaned graph `G' = (G − E(T)) \ A` as a host of Theorem 14.6

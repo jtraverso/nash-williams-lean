@@ -1,0 +1,60 @@
+{
+  "author": "Juan Pablo Traverso Gianini",
+  "date_utc": "2026-10-20T14:03:04.904195+00:00",
+  "scope": "Port compatibility repair in isolated checkout only. No theorem statement, hypothesis or mathematical argument changed; final tactic elaboration made constructor-explicit. Original frozen sources untouched.",
+  "repairs": [
+    {
+      "path": "PartitionedTriangleAbsorption/BlowupB/PaddedF12/TorsionFinite.lean",
+      "line": 185,
+      "kind": "match elaboration under module visibility",
+      "before": "  simpa [cap] using h",
+      "after": "  cases a <;> simpa [cap] using h",
+      "before_sha256": "30ed0033a78f99b4fadd5aa4efe00184150ba826d941ede55f890f8e1c264c53",
+      "after_sha256": "e3bfef90b43217b4850d150eedd1ab149d2b4c11ab61d6dd7c44ce8ee3453321",
+      "validation": "Temporary full-file lean run exited 0; eight axiom queries use only propext, Classical.choice, Quot.sound. Full Lake build and check_palomar still pending."
+    },
+    {
+      "path": "RequestProject/NW18/Main.lean",
+      "kind": "documentation comments only",
+      "before_sha256": "5694eda32624e19561685a16119341fec3e9fb11445346d91dd36fc765aa8da9",
+      "after_sha256": "4717989d858fc053c1ef119cc64ba1448466fcbde01a7852d80fed6ea8c19eaf",
+      "edits": [
+        {
+          "before": "Note: the arbitrary-host interface `Theorem1316Statement` (aggregated label divisibility) has\r\nbeen reported to admit a physical-lattice counterexample (see `NW18_BRANCH_LEDGER.md`); if so,\r\nthis theorem is vacuous, and `nash_williams_of_branch_theorems` is the meaningful conditional\r\nform.",
+          "after": "This is a conditional compatibility interface, not the completed proof exported by Paper I.\r\nThe distinction between aggregate label divisibility and the physical edge lattice is\r\ndiscussed in Paper II, Section 7.1. That discussion does not identify this interface with\r\nthe unexamined manuscript cited as reference 17 by Delcourt and Postle. The canonical\r\ncompleted assembly is `NashWilliams18.PaperI.nash_williams_via_paperII`."
+        }
+      ],
+      "validation": "All bytes outside Lean block comments unchanged."
+    },
+    {
+      "path": "RequestProject/NW18/PaperIIAssembly.lean",
+      "kind": "documentation comments only",
+      "before_sha256": "1a70ca3b51eb5816073ad7f6a7c15a430f4b392b4ff8623e128db1495a2257f3",
+      "after_sha256": "34734c5d8c6f871c2c09023820a30fc163e15d807eaafaa1d0dfd829462f40ee",
+      "edits": [
+        {
+          "before": "This is an alternative entry point, not a replacement of `nash_williams`.",
+          "after": "This is the canonical completed assembly used by Paper I."
+        },
+        {
+          "before": "Alternative full assembly, using the F0, F1 and F2 inputs of Paper II.",
+          "after": "Canonical full assembly, using the F0, F1 and F2 inputs of Paper II."
+        }
+      ],
+      "validation": "All bytes outside Lean block comments unchanged."
+    },
+    {
+      "path": "README.md",
+      "kind": "README audit scope correction",
+      "before_sha256": "47d118f3c824ddf4d5ccd6b3773890da555dc59643e5328428903339a89fd0ba",
+      "after_sha256": "49d01cd6038405ed2a93f184d526aa18034cb0a29a5ca74db27708a0d36eb577",
+      "edits": [
+        {
+          "before": "of the main theorem, requires the replacement inputs, forbids the earlier final theorem and the\r\n  hypothesis `Theorem1316Statement`, and checks that only `propext`, `Classical.choice` and\r\n  `Quot.sound` are used.",
+          "after": "of the main theorem and requires the replacement inputs. It excludes specified legacy\r\n  constants and `Theorem1316Statement`, and checks the six standard-axiom queries. The\r\n  configured legacy name `NashWilliams18.nash_williams` is absent from this source tree,\r\n  so excluding that name alone is vacuous; the substantive checks are the required\r\n  replacement dependencies and the exclusions of legacy declarations that are present."
+        }
+      ],
+      "validation": "Corrects a vacuous-name audit claim; no code changes."
+    }
+  ]
+}

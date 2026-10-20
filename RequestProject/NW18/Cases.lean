@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Defs
-import RequestProject.NW18.Case125.Assembly
-import RequestProject.NW18.Case126.Theorem126
-import RequestProject.NW18.Case127.Theorem127
+module
+
+public import RequestProject.NW18.Defs
+public import RequestProject.NW18.Case125.Assembly
+public import RequestProject.NW18.Case126.Theorem126
+public import RequestProject.NW18.Case127.Theorem127
+
+@[expose] public section
 
 /-!
 # Theorem 1.8: the ingredients from Parts II and III of the paper

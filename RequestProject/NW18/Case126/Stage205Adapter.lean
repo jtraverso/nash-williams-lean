@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Stage193Adapter
-import PartitionedTriangleAbsorption.TerminalPackingRepairStage206
+module
+
+public import RequestProject.NW18.Case126.Stage193Adapter
+public import PartitionedTriangleAbsorption.TerminalPackingRepairStage206
+
+@[expose] public section
 
 /-!
 # Theorem 14.7 for `F₁`: the produced reserve and the confined residual (ported Stage 205)

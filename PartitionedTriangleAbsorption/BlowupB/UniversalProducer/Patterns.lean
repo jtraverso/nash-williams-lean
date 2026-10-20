@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.EdgeMap
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.IterLayers
-import PartitionedTriangleAbsorption.ReturnedDivisibility
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.EdgeMap
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.IterLayers
+public import PartitionedTriangleAbsorption.ReturnedDivisibility
+
+@[expose] public section
 
 /-!
 # Patterns: a fixed finite catalogue of physical charge tokens

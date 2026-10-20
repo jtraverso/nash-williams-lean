@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.Vortex.Conversions
-import RequestProject.NW18.Sampling.MaxCut
+module
+
+public import RequestProject.NW18.Case124.Vortex.Conversions
+public import RequestProject.NW18.Sampling.MaxCut
+
+@[expose] public section
 
 /-!
 # A uniform vortex for branch 12.4, selected in the original graph

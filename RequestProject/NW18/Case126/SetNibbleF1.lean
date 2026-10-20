@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.PuncturedLoadF1
-import PartitionedTriangleAbsorption.TypedNearConsumer
+module
+
+public import RequestProject.NW18.Case126.PuncturedLoadF1
+public import PartitionedTriangleAbsorption.TypedNearConsumer
+
+@[expose] public section
 
 /-!
 # The ported typed near-load nibble, relative to a vertex SET `W`

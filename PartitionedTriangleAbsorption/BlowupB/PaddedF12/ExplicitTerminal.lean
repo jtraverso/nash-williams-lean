@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ExplicitHub
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.GuardedTerminal
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ExplicitHub
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.GuardedTerminal
+
+@[expose] public section
 
 /-!
 # Terminal F1/F2 absorbers with an explicit uniform size and order

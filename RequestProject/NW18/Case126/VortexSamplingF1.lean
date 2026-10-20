@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.L3F0VertexSample
-import Mathlib.Combinatorics.SimpleGraph.Basic
+module
+
+public import PartitionedTriangleAbsorption.L3F0VertexSample
+public import Mathlib.Combinatorics.SimpleGraph.Basic
+
+@[expose] public section
 
 /-!
 # The strengthened one-step sampling lemma for the `F₁` vortex

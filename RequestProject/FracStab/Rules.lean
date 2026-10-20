@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.FracStab.Charge
-import RequestProject.Fractional.Global
+module
+
+public import RequestProject.FracStab.Charge
+public import RequestProject.Fractional.Global
+
+@[expose] public section
 
 /-!
 # The additional discharging rules of §7.3 / §10.2

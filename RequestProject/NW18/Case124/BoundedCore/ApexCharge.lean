@@ -3,11 +3,15 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.ReturnedBasic
-import Mathlib.Data.Finset.Card
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Tactic.Tauto
-import RequestProject.NW18.Case124.BoundedCore.RoundTargets
+module
+
+public import PartitionedTriangleAbsorption.ReturnedBasic
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Tactic.Tauto
+public import RequestProject.NW18.Case124.BoundedCore.RoundTargets
+
+@[expose] public section
 
 /-! Physical charging at exterior roots. The conclusion uses only the actual
 support of an edge-disjoint triangle family, not a global bound on apex visits. -/

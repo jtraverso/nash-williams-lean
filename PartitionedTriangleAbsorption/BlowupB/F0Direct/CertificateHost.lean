@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateAssembly
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateSupport
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateSelection
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateColumns
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateAssembly
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateSupport
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateSelection
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateColumns
+
+@[expose] public section
 
 /-! # Linear signed certificates in the original nonextreme host
 

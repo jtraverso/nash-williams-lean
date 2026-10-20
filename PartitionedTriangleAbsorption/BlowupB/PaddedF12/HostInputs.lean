@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.HostSupply
-import PartitionedTriangleAbsorption.ColouredHub.Families
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.HostSupply
+public import PartitionedTriangleAbsorption.ColouredHub.Families
+
+@[expose] public section
 
 /-! # The ordinary and typed anti-edge inputs for F1 and F2
 

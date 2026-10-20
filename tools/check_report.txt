@@ -1,0 +1,15 @@
+--- audit output ---
+PASS_PAPERII_PROOF_DEPENDENCIES
+'NashWilliams18.PaperII.theorem146_F0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NashWilliams18.PaperII.theorem147_F1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NashWilliams18.PaperII.theorem147_F2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NashWilliams18.PaperII.typed_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NashWilliams18.PaperI.nash_williams_of_paperII_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NashWilliams18.PaperI.nash_williams_via_paperII' depends on axioms: [propext, Classical.choice, Quot.sound]
+TYPES AND DEFINITIONS IDENTICAL (302 lines)
+--- solution axioms ---
+'NashWilliamsTheorem.nash_williams' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NashWilliamsTheorem.fractional_nash_williams' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NashWilliamsTheorem.fractional_stability' depends on axioms: [propext, Classical.choice, Quot.sound]
+no sorry/admit/native_decide/axiom in the library or Solution
+ALL CHECKS PASSED

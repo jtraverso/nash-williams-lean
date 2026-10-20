@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.RoutedPaper
-import PartitionedTriangleAbsorption.BlowupB.Families
-import PartitionedTriangleAbsorption.FourColourStabilityStage84
-import PartitionedTriangleAbsorption.TypedCoarseningStage81
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.RoutedPaper
+public import PartitionedTriangleAbsorption.BlowupB.Families
+public import PartitionedTriangleAbsorption.FourColourStabilityStage84
+public import PartitionedTriangleAbsorption.TypedCoarseningStage81
+
+@[expose] public section
 
 /-! The four-colour application, using Paper II's proved F3 producer. -/
 

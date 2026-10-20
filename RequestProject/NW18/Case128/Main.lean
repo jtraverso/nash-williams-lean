@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case128.ExceptionalStage
+module
+
+public import RequestProject.NW18.Case128.ExceptionalStage
+
+@[expose] public section
 
 /-!
 # Case (5): proof of the exceptional pre-clean and of Theorem 12.8

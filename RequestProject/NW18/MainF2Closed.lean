@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.MainF1Closed
-import PartitionedTriangleAbsorption.BlowupB.KeevashF12Closed
+module
+
+public import RequestProject.NW18.MainF1Closed
+public import PartitionedTriangleAbsorption.BlowupB.KeevashF12Closed
+
+@[expose] public section
 
 /-!
 # Theorem 14.7 for `F₂` and branch 12.7, unconditionally

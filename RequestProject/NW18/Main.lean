@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Theorem124
-import RequestProject.NW18.Case128.Main
-import RequestProject.NW18.Cases
+module
+
+public import RequestProject.NW18.Theorem124
+public import RequestProject.NW18.Case128.Main
+public import RequestProject.NW18.Cases
+
+@[expose] public section
 
 /-!
 # Theorem 1.8 (Nash-Williams' Conjecture) from the branch theorems
@@ -93,10 +97,11 @@ theorem nash_williams_of_branch_theorems (h124 : Theorem1316K3Statement)
 /-- **Theorem 1.8 (Nash-Williams' Conjecture), assuming Theorem 13.16** (the global interface
 `h1316 : Theorem1316Statement`).  Kept for compatibility; it is derived from
 `nash_williams_of_branch_theorems`, whose four premises are specialisations of `h1316`.
-Note: the arbitrary-host interface `Theorem1316Statement` (aggregated label divisibility) has
-been reported to admit a physical-lattice counterexample (see `NW18_BRANCH_LEDGER.md`); if so,
-this theorem is vacuous, and `nash_williams_of_branch_theorems` is the meaningful conditional
-form. -/
+This is a conditional compatibility interface, not the completed proof exported by Paper I.
+The distinction between aggregate label divisibility and the physical edge lattice is
+discussed in Paper II, Section 7.1. That discussion does not identify this interface with
+the unexamined manuscript cited as reference 17 by Delcourt and Postle. The canonical
+completed assembly is `NashWilliams18.PaperI.nash_williams_via_paperII`. -/
 theorem nash_williams_of_theorem_13_16 (h1316 : Theorem1316Statement) :
     ∃ N : ℕ, ∀ (V : Type) [Fintype V] [DecidableEq V] (G : SimpleGraph V) [DecidableRel G.Adj],
       N ≤ Fintype.card V → NashWilliams.IsTriangleDivisible G →

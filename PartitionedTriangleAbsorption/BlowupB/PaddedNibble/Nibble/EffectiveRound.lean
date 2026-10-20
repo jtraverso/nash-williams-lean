@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.Nibble.NearConsumer
-import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.EffectiveRate
-import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.EffectiveTail
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.Nibble.NearConsumer
+public import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.EffectiveRate
+public import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.EffectiveTail
+
+@[expose] public section
 
 /-!
 # An explicit threshold for the physical nibble round

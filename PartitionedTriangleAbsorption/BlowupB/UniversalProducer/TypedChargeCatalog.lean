@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.ChargeAtoms
-import PartitionedTriangleAbsorption.TypedDivisibilityCollapse
-import Mathlib.GroupTheory.QuotientGroup.Defs
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.ChargeAtoms
+public import PartitionedTriangleAbsorption.TypedDivisibilityCollapse
+public import Mathlib.GroupTheory.QuotientGroup.Defs
+
+@[expose] public section
 
 /-! The charge catalog in the ACTUAL integral type quotient. It retains
 torsion; replacing this group by a real cokernel would lose information.

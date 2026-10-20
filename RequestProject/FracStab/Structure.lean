@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.FracStab.Charge
-import RequestProject.FracStab.BipMain
+module
+
+public import RequestProject.FracStab.Charge
+public import RequestProject.FracStab.BipMain
+
+@[expose] public section
 
 /-!
 # Local structure of extremal edges (§9.2 and §10.2 of the paper)

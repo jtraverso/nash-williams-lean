@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedScales
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.UniversalF3
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedScales
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.UniversalF3
+
+@[expose] public section
 
 /-!
 # A universal F₃ absorber with explicit budgets

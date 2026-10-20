@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedThresholds
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedParameters
-import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.ReserveConstruction
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedThresholds
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedParameters
+public import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.ReserveConstruction
+
+@[expose] public section
 
 /-! # Assembly of the exact padded statement from physical host repair
 

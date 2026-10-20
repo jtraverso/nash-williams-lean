@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.SignedCertificate
-import RequestProject.NW18.Defs
+module
+
+public import RequestProject.NW18.Case124.SignedCertificate
+public import RequestProject.NW18.Defs
+
+@[expose] public section
 
 /-!
 # Signed certificates on the actual 12.4 hosts and on their robust residues

@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteBounds
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.PhysicalWeightTransport
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteBounds
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.PhysicalWeightTransport
+
+@[expose] public section
 
 /-!
 # From complete-crossing coordinates to physical copy loads

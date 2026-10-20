@@ -3,11 +3,15 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.FiniteTerminal
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.PositiveWeights
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.UniversalScales
-import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.ReserveConstruction
-import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.TypedCoverDownConsumer
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.FiniteTerminal
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.PositiveWeights
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.UniversalScales
+public import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.ReserveConstruction
+public import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.TypedCoverDownConsumer
+
+@[expose] public section
 
 /-!
 # Exact decomposition from the geometric producers

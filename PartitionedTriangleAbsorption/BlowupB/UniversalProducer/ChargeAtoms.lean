@@ -3,11 +3,15 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import Mathlib.Order.WellFoundedSet
-import Mathlib.Algebra.BigOperators.Group.List.Basic
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Algebra.Group.Hom.Defs
-import Mathlib.Tactic
+module
+
+public import Mathlib.Order.WellFoundedSet
+public import Mathlib.Algebra.BigOperators.Group.List.Basic
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Algebra.Group.Hom.Defs
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! Finite zero-charge recipes, including torsion in the target group.
 This is an algebraic grouping theorem, NOT a physical shared refiner.

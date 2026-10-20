@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PhysicalCharge
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.BoundedLattice
-import PartitionedTriangleAbsorption.ColouredHub.Lattice
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PhysicalCharge
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.BoundedLattice
+public import PartitionedTriangleAbsorption.ColouredHub.Lattice
+
+@[expose] public section
 
 /-!
 # Explicit coefficient budgets for the original F1/F2 edge vectors

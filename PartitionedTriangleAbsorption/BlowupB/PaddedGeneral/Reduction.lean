@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF3.Assembly
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF3.Assembly
+
+@[expose] public section
 
 /-!
 # The padded Keevash statement from two family certificates (t = 4)

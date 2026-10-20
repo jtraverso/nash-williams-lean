@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.CompletePhysical
-import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.TypedNibbleAdapter
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.CompletePhysical
+public import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.TypedNibbleAdapter
+
+@[expose] public section
 
 /-!
 # Symmetric ternary weights and the original physical copies

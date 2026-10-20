@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalProfiles
-import PartitionedTriangleAbsorption.BlowupB.PaddedComponents.ReductionLarge
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalProfiles
+public import PartitionedTriangleAbsorption.BlowupB.PaddedComponents.ReductionLarge
+
+@[expose] public section
 
 /-! # Corrected complete inverse contract and its actual load-defect consumer
 

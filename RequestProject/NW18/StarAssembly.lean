@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Defs
-import PartitionedTriangleAbsorption.GeometricStarMarginStage146
-import PartitionedTriangleAbsorption.PhysicalStarMatching
+module
+
+public import RequestProject.NW18.Defs
+public import PartitionedTriangleAbsorption.GeometricStarMarginStage146
+public import PartitionedTriangleAbsorption.PhysicalStarMatching
+
+@[expose] public section
 
 /-!
 # Sequential assembly of the exceptional stars (independent exceptional set)

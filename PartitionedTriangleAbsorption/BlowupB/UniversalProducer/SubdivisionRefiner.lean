@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.LibraryWeights
-import PartitionedTriangleAbsorption.UniversalRefiner.Physical
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.LibraryWeights
+public import PartitionedTriangleAbsorption.UniversalRefiner.Physical
+
+@[expose] public section
 
 /-! Transport a fixed refiner by an edge-disjoint subdivision that fixes X.
 This is a proved consumer of explicit edge replacements, not their producer.

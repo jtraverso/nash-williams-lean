@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.Geometry
-import Mathlib.Combinatorics.SimpleGraph.DegreeSum
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.Geometry
+public import Mathlib.Combinatorics.SimpleGraph.DegreeSum
+
+@[expose] public section
 
 /-! Ordered-pair interface used by NW18.Case125.Defs, without importing its
 unrelated 4.28 project. This is not a redefinition of Theorem146Statement. -/

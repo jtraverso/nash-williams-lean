@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.TotPacking
-import RequestProject.NW18.Case127.FixerEdges
-import RequestProject.NW18.Case127.Clean
+module
+
+public import RequestProject.NW18.Case126.TotPacking
+public import RequestProject.NW18.Case127.FixerEdges
+public import RequestProject.NW18.Case127.Clean
+
+@[expose] public section
 
 /-!
 # The total packing `T₁ ∪ T₂ ∪ Q` (end of the proof of Theorem 12.7)

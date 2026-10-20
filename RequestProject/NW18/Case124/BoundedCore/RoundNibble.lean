@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.RegularThinning
-import RequestProject.NW18.Case124.BoundedCore.NibbleBridge
+module
+
+public import RequestProject.NW18.Case124.RegularThinning
+public import RequestProject.NW18.Case124.BoundedCore.NibbleBridge
+
+@[expose] public section
 
 /-! The protected nibble leaves a maximum-degree-small physical leftover.
 The estimate covers ALL stars, including stars below the EGJ monitor threshold.

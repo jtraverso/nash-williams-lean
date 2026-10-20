@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.InverseScales
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.InverseScales
+
+@[expose] public section
 
 /-! The reserve/repair/nibble pipeline with family-dependent inverse scales.
 Unlike the old NumericInputs, no bound C <= 2^20 is hidden here. The two

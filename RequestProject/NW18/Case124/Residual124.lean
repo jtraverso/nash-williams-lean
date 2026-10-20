@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Main124Branch
-import RequestProject.NW18.Case124.SignedCertificateHosts
-import PartitionedTriangleAbsorption.ReturnedAssembly
+module
+
+public import RequestProject.NW18.Main124Branch
+public import RequestProject.NW18.Case124.SignedCertificateHosts
+public import PartitionedTriangleAbsorption.ReturnedAssembly
+
+@[expose] public section
 
 /-!
 # Branch 12.4: the exact remaining propositions, with explicit quantifier order

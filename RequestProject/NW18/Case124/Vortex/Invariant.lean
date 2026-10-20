@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case124.Vortex.ChildStep
+module
+
+public import RequestProject.NW18.Case124.Vortex.ChildStep
+
+@[expose] public section
 
 /-!
 # The 12.4 vortex level invariant and one sampling step

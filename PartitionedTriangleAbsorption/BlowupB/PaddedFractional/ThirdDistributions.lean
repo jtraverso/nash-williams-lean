@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.Marginals
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.PhysicalChains
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.GadgetPlacements
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.Marginals
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.PhysicalChains
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.GadgetPlacements
+
+@[expose] public section
 
 /-!
 # Distributions of a third vertex over a fixed physical edge

@@ -3,14 +3,18 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.BlowupPaperInputs
-import RequestProject.NW18.Case124.BoundedCore.Final
-import RequestProject.NW18.Case124.BoundedCore.RoundProducer
+module
+
+public import RequestProject.NW18.BlowupPaperInputs
+public import RequestProject.NW18.Case124.BoundedCore.Final
+public import RequestProject.NW18.Case124.BoundedCore.RoundProducer
+
+@[expose] public section
 
 /-!
 # Nash-Williams assembled with the typed blowup inputs of Paper II
 
-This is an alternative entry point, not a replacement of `nash_williams`.
+This is the canonical completed assembly used by Paper I.
 The case analysis is the existing one from `Main124Branch`, with both typed
 inputs supplied explicitly by `PaperII`, together with its separate F0 input.
 The non-extremal branch and the exceptional cleanup retain their own proofs.
@@ -53,7 +57,7 @@ theorem nash_williams_of_paperII_inputs
   · exact h₄ V G hn₄ hdiv hδ (hx.mono (min_le_right _ _)) hnc
   · exact h₅ V G hn₅ hdiv hδ hx
 
-/-- Alternative full assembly, using the F0, F1 and F2 inputs of Paper II. -/
+/-- Canonical full assembly, using the F0, F1 and F2 inputs of Paper II. -/
 theorem nash_williams_via_paperII :
     ∃ N : ℕ, ∀ (V : Type) [Fintype V] [DecidableEq V]
       (G : SimpleGraph V) [DecidableRel G.Adj],

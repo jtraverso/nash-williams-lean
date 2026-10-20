@@ -72,9 +72,11 @@ statements that use them.
   (`roundUnivSpec124_holds`) followed by a terminal absorption construction. The matching input
   is the Ehard–Glock–Joos theorem (`Pseudorandom.theorem_1_2`).
 * **Audit.** `tools/audit/AuditPaperIIAssembly.lean.in` walks the proof-dependency closure
-  of the main theorem, requires the replacement inputs, forbids the earlier final theorem and the
-  hypothesis `Theorem1316Statement`, and checks that only `propext`, `Classical.choice` and
-  `Quot.sound` are used.
+  of the main theorem and requires the replacement inputs. It excludes specified legacy
+  constants and `Theorem1316Statement`, and checks the six standard-axiom queries. The
+  configured legacy name `NashWilliams18.nash_williams` is absent from this source tree,
+  so excluding that name alone is vacuous; the substantive checks are the required
+  replacement dependencies and the exclusions of legacy declarations that are present.
 
 ## Build evidence
 

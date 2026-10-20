@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Sampling.Deterministic
-import RequestProject.NW18.Sampling.Counts
-import RequestProject.NW18.Sampling.MaxCut
+module
+
+public import RequestProject.NW18.Sampling.Deterministic
+public import RequestProject.NW18.Sampling.Counts
+public import RequestProject.NW18.Sampling.MaxCut
+
+@[expose] public section
 
 /-!
 # Lemma 11.6 (random induced subgraphs of a non-extremal graph)

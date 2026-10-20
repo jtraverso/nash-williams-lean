@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ScalarLattice
-import PartitionedTriangleAbsorption.TypedPieceConditions
-import PartitionedTriangleAbsorption.TypedRefinerCharge
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ScalarLattice
+public import PartitionedTriangleAbsorption.TypedPieceConditions
+public import PartitionedTriangleAbsorption.TypedRefinerCharge
+
+@[expose] public section
 
 /-!
 # Physical unordered counts and the original ordered edge vector

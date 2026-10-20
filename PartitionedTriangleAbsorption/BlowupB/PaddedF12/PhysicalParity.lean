@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PhysicalLattice
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ParityEvaluation
-import PartitionedTriangleAbsorption.OnePartDivisibility
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PhysicalLattice
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ParityEvaluation
+public import PartitionedTriangleAbsorption.OnePartDivisibility
+
+@[expose] public section
 
 /-!
 # Physical parity evaluations for F1 and F2

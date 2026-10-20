@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.TorsionParity
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.PredEnumeration
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.TorsionParity
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.PredEnumeration
+
+@[expose] public section
 
 /-!
 # A universal parity layer for physical predicate refiners

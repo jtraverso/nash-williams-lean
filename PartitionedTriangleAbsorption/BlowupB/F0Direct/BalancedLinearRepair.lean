@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.F0RigidBoost
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.LinearRepair
-import Mathlib.Analysis.Normed.Group.Constructions
+module
+
+public import PartitionedTriangleAbsorption.F0RigidBoost
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.LinearRepair
+public import Mathlib.Analysis.Normed.Group.Constructions
+
+@[expose] public section
 
 /-!
 # The finite-dimensional repair lemma on the actual F0 demand space

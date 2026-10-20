@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.TemplateFamily
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.TypedChargeCatalog
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.GroupLedger
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.TemplateFamily
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.TypedChargeCatalog
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.GroupLedger
+
+@[expose] public section
 
 /-!
 # Transporting edge sets along vertex maps that are injective on their vertices

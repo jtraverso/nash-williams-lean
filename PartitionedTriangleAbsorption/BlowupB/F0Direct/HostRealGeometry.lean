@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.HostHinges
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateCrossMatrix
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.WalkConsequences
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealInternalInverse
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.HostHinges
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateCrossMatrix
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.WalkConsequences
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealInternalInverse
+
+@[expose] public section
 
 /-! # Geometric inputs for the complete-crossing real inverse
 

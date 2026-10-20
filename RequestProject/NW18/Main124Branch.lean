@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.MainF2Closed
+module
+
+public import RequestProject.NW18.MainF2Closed
+
+@[expose] public section
 
 /-!
 # Final consumer taking the exact branch statement 12.4

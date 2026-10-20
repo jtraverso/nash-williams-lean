@@ -1,5 +1,6 @@
 name = "nash_williams_paper_i"
 version = "0.1.0"
+requiresModuleSystem = true
 defaultTargets = ["Challenge", "Solution"]
 
 [[require]]

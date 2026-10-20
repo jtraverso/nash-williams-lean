@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.HostInverse
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.LoadDefect
-import PartitionedTriangleAbsorption.BlowupB.PaddedF3.Universal
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.HostInverse
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.LoadDefect
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF3.Universal
+
+@[expose] public section
 
 /-!
 # The bounded signed inverse for F₃

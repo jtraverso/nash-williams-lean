@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.ThirdDistributions
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.AdaptiveWindow
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.ThirdDistributions
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.AdaptiveWindow
+
+@[expose] public section
 
 /-!
 # The four host faces of an octahedron

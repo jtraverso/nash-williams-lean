@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Lemma159W
-import RequestProject.NW18.Case126.Lemma1517
-import RequestProject.NW18.Case126.IntDivF1
-import RequestProject.NW18.Case126.FracDivF1
+module
+
+public import RequestProject.NW18.Case126.Lemma159W
+public import RequestProject.NW18.Case126.Lemma1517
+public import RequestProject.NW18.Case126.IntDivF1
+public import RequestProject.NW18.Case126.FracDivF1
+
+@[expose] public section
 
 /-!
 # Setting of the proof of Theorem 12.6

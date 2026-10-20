@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedParameters
-import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.UniformThreshold
-import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.TypedEffectiveConsumer
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedParameters
+public import PartitionedTriangleAbsorption.BlowupB.PaddedQuantitative.UniformThreshold
+public import PartitionedTriangleAbsorption.BlowupB.PaddedNibble.TypedEffectiveConsumer
+
+@[expose] public section
 
 /-! # A single explicit order threshold, chosen before the density -/
 

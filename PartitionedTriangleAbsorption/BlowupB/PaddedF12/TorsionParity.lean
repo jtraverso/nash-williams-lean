@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.TorsionRealization
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ParityEvaluation
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.TorsionRealization
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.ParityEvaluation
+
+@[expose] public section
 
 /-!
 # Parity, size and physical incidence of every fixed library member

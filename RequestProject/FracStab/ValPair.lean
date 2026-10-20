@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.Fractional.Local
+module
+
+public import RequestProject.Fractional.Local
+
+@[expose] public section
 
 /-!
 # Value lemmas for a pair in the common neighbourhood (Lemmas 9.2 and 9.3)

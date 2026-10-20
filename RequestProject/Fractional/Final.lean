@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.Fractional.Perturb
-import RequestProject.Fractional.Farkas
+module
+
+public import RequestProject.Fractional.Perturb
+public import RequestProject.Fractional.Farkas
+
+@[expose] public section
 
 /-!
 # Fractional Nash-Williams via Farkas (Theorem 1.4)

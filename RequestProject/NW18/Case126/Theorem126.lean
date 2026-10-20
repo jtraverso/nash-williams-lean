@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Core
-import RequestProject.NW18.CloseExtremal
+module
+
+public import RequestProject.NW18.Case126.Core
+public import RequestProject.NW18.CloseExtremal
+
+@[expose] public section
 
 /-!
 # Proof of Theorem 12.6 (case (3) of §12.2)

@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import Mathlib
-import PartitionedTriangleAbsorption.ReturnedBasic
+module
+
+public import Mathlib
+public import PartitionedTriangleAbsorption.ReturnedBasic
+
+@[expose] public section
 
 /-!
 # Greedy apex cover of a sparse leftover through a prechosen reserve (branch 12.4)

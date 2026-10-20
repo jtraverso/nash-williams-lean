@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case125.LinkPairing
-import RequestProject.NW18.Case125.Cleaning
+module
+
+public import RequestProject.NW18.Case125.LinkPairing
+public import RequestProject.NW18.Case125.Cleaning
+
+@[expose] public section
 
 /-!
 # One step of Claim 15.9.4: decomposing the remaining edges at one oddball

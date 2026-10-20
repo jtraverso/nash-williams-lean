@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case125.F0HingeCount
-import RequestProject.NW18.Case125.SideCost
+module
+
+public import RequestProject.NW18.Case125.F0HingeCount
+public import RequestProject.NW18.Case125.SideCost
+
+@[expose] public section
 
 /-!
 # Few walks of length four force a side to be close to `T₂` or `T̄₂`

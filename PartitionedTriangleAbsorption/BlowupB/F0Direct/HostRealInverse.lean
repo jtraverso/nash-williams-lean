@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.HostRealGeometry
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.HostRealCoordinates
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteInverse
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.DiscardedCopies
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.HostRealGeometry
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.HostRealCoordinates
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteInverse
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.DiscardedCopies
+
+@[expose] public section
 
 /-! # The balanced physical inverse from the original geometric hypotheses
 

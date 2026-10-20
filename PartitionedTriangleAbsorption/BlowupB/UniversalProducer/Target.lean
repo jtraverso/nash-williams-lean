@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.Reduction
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.UniversalF12
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.Reduction
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.UniversalF12
+
+@[expose] public section
 
 /-!
 # The universal-absorber producer target

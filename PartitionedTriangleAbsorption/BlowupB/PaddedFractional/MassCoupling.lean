@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.AdaptiveAverage
-import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.AdaptiveAverage
+public import Mathlib.Algebra.BigOperators.Group.Finset.Sigma
+
+@[expose] public section
 
 /-!
 # Coupling opposite signed occurrences before their physical placement

@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalInverseBound
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealProfileBounds
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.LocalInverseBound
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealProfileBounds
+
+@[expose] public section
 
 /-! # Typed ternary weights for the general real inverse
 

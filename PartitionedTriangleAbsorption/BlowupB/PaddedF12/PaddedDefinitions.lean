@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.HostSupply
-import PartitionedTriangleAbsorption.TypedTransformerLabels
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.HostSupply
+public import PartitionedTriangleAbsorption.TypedTransformerLabels
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+
+@[expose] public section
 
 /-!
 # The exact padded input definitions supplied in INPUT_TASK.md

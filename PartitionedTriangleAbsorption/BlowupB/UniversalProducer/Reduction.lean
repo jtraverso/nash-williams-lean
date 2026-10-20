@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.PatternSupply
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.ReductionArith
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.Refiner
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.PairLattice
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.PatternSupply
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.ReductionArith
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.Refiner
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.PairLattice
+
+@[expose] public section
 
 /-!
 # From a shared EVEN refiner to the shared (integrally divisible) refiner

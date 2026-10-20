@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.VirtualRefiner
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.WeightedRouting
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.VirtualRefiner
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.WeightedRouting
+
+@[expose] public section
 
 /-!
 # The shared even refiner by weighted physical path routing (no common-link classes)

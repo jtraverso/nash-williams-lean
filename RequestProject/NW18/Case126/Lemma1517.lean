@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case128Reduction
-import RequestProject.NW18.Case125.Surplus
+module
+
+public import RequestProject.NW18.Case128Reduction
+public import RequestProject.NW18.Case125.Surplus
+
+@[expose] public section
 
 /-!
 # Lemma 15.17: greedy covering of a sparse set of interior edges

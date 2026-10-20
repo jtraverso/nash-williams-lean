@@ -3,11 +3,15 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedAssembly
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.HostInverse
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.LoadDefect
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.Deletion
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.PositiveRepair
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.PaddedAssembly
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.HostInverse
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.LoadDefect
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.Deletion
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.PositiveRepair
+
+@[expose] public section
 
 /-!
 # Positive fractional repair after deleting the constructed absorber and reserve

@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CoordinateTransport
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteSumCoordinates
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateCrossMatrix
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.CrossCompletion
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CoordinateTransport
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RealCompleteSumCoordinates
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CertificateCrossMatrix
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.CrossCompletion
+
+@[expose] public section
 
 /-! # Physical coordinates on the crossing completion of the given partition -/
 

@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedF12.RealTypeTotals
-import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.PhysicalTypeModes
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedF12.RealTypeTotals
+public import PartitionedTriangleAbsorption.BlowupB.PaddedFractional.PhysicalTypeModes
+
+@[expose] public section
 
 /-! # The bounded physical correction of all global type totals -/
 

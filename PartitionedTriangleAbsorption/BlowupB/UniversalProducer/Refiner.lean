@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.Target
-import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.UniversalF3
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.Target
+public import PartitionedTriangleAbsorption.BlowupB.StructuralF3General.UniversalF3
+
+@[expose] public section
 
 /-!
 # General assembly: a shared refiner producer gives the universal-absorber target

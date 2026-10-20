@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.ProtectedLevelF1
-import PartitionedTriangleAbsorption.TypedAnnularIterationStage236
+module
+
+public import RequestProject.NW18.Case126.ProtectedLevelF1
+public import PartitionedTriangleAbsorption.TypedAnnularIterationStage236
+
+@[expose] public section
 
 /-!
 # Feeding the protected `F₁` level producer into the protected iteration

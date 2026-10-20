@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.Theorem147
+module
+
+public import RequestProject.NW18.Case126.Theorem147
+
+@[expose] public section
 
 /-!
 # Claim 14.7.2 for `F₁`: fractional `F₁`-divisibility of an idealized `F₁`-blowup

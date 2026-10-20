@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.ProducerConsumer
-import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.RoutedEvenProducer
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.ProducerConsumer
+public import PartitionedTriangleAbsorption.BlowupB.UniversalProducer.RoutedEvenProducer
+
+@[expose] public section
 
 /-! The general three-step-link theorem, independent of the Nash-Williams adapters. -/
 

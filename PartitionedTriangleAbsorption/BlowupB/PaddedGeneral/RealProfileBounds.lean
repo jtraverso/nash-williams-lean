@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.BoundedProfiles
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.BoundedProfiles
+
+@[expose] public section
 
 /-! Pointwise budgets for the real sections used by the general inverse.
 Constants are chosen before the vertex type, partition and demand. These are

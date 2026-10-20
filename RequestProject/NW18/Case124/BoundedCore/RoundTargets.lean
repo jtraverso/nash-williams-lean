@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import Mathlib.Data.Finset.Card
-import Mathlib.Tactic.Linarith
-import Lean.Elab.Tactic.Omega
+module
+
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Tactic.Linarith
+public import Lean.Elab.Tactic.Omega
+
+@[expose] public section
 
 /-! Transport the sampled-reserve budgets to the targets after nibble and apex coverage.
 These finite-set statements do not assert that the graph supplies the hypotheses. -/

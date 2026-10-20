@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.VortexSupplyF1
-import RequestProject.NW18.Case126.BalanceLedgerF1
-import PartitionedTriangleAbsorption.F1PhysicalQueriesStage238
+module
+
+public import RequestProject.NW18.Case126.VortexSupplyF1
+public import RequestProject.NW18.Case126.BalanceLedgerF1
+public import PartitionedTriangleAbsorption.F1PhysicalQueriesStage238
+
+@[expose] public section
 
 /-!
 # One sampled cross reserve with all the statistics of a protected `F₁` level

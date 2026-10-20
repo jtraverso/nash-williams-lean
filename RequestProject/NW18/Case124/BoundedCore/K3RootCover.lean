@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case126.SpreadPairingF1
-import RequestProject.NW18.Case124.OneScale.SpreadMatchingDirac
-import RequestProject.NW18.Base
+module
+
+public import RequestProject.NW18.Case126.SpreadPairingF1
+public import RequestProject.NW18.Case124.OneScale.SpreadMatchingDirac
+public import RequestProject.NW18.Base
+
+@[expose] public section
 
 /-!
 # Spread `K₃` root cover-down (ordinary triangles)

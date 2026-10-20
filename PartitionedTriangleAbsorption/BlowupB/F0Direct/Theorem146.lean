@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.WeightProducer
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.RawInterface
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.WeightProducer
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.RawInterface
+
+@[expose] public section
 
 /-!
 # The F0 decomposition theorem for the nonextreme two-part branch

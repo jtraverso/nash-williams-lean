@@ -3,7 +3,11 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case125.SideCost
+module
+
+public import RequestProject.NW18.Case125.SideCost
+
+@[expose] public section
 
 /-!
 # Stability of triangle-free graphs (the Füredi step behind Claim 12.5.1)

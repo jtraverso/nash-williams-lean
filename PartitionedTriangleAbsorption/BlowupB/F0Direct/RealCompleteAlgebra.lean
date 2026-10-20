@@ -3,10 +3,14 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.F0Direct.LinearRepair
-import Mathlib.LinearAlgebra.Pi
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Algebra.BigOperators.Field
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.F0Direct.LinearRepair
+public import Mathlib.LinearAlgebra.Pi
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Algebra.BigOperators.Field
+
+@[expose] public section
 
 /-!
 # Exact real repair with complete crossing edges

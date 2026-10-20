@@ -3,8 +3,12 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.Producer
-import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.ScaledPipeline
+module
+
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.RealInverse.Producer
+public import PartitionedTriangleAbsorption.BlowupB.PaddedGeneral.ScaledPipeline
+
+@[expose] public section
 
 /-! # Connection of the proved general real inverse to the existing consumers
 

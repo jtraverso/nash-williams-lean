@@ -3,9 +3,13 @@ Copyright (c) 2026 Juan Pablo Traverso Gianini. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Juan Pablo Traverso Gianini
 -/
-import RequestProject.NW18.Case127.TotPacking
-import RequestProject.NW18.Case127.Reserve
-import RequestProject.NW18.Case127.Residual
+module
+
+public import RequestProject.NW18.Case127.TotPacking
+public import RequestProject.NW18.Case127.Reserve
+public import RequestProject.NW18.Case127.Residual
+
+@[expose] public section
 
 /-!
 # Theorem 12.7, combinatorial core
