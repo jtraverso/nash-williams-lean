@@ -81,7 +81,8 @@ status:
     n₀ that the original statement does not impose. The thresholds N, n₀, ε are existential and
     not explicit. Delcourt–Postle's Theorem 13.16 is not assumed: the proof-dependency audit in
     `RequestProject/NW18/AuditPaperIIAssembly.lean` forbids it and the earlier final theorem that
-    used it.
+    used it. The sources are the author's freeze ported mechanically to the Lean module system
+    (`tools/port_to_module.py`); the audit script lives in `tools/audit/`.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: []
@@ -106,9 +107,9 @@ automation:
       tool_setup: >-
         Used to explore and check arguments, to prepare the manuscripts and, for this package
         (Claude Code), to write the Challenge/Solution pair, the documentation and the Palomar
-        packaging; the Challenge statements and definitions were checked textually against the
-        library and the Challenge was compiled (Lean v4.35.0-rc3, Mathlib
-        c55e6e786f49471c72fbddbec5415808896aec1e).
+        packaging, including the mechanical port to the module system and the post-build checks;
+        the Challenge statements and definitions were checked textually against the library
+        (Lean v4.35.0-rc3, Mathlib c55e6e786f49471c72fbddbec5415808896aec1e).
       cost:
         wall_time: "not tracked"
         spend_usd: "subscription-based"
@@ -117,9 +118,10 @@ automation:
   spend_usd: "not tracked"
   notes: >-
     The Lean development is AI-assisted under the author's direction and mechanically verified.
-    A recorded clean build of all 1,070 modules passed the dependency audit with only propext,
-    Classical.choice and Quot.sound; the sources here differ from that build only in the initial
-    author-header comment of each file and were not rebuilt locally before submission.
+    A recorded clean build of all 1,070 modules of the freeze passed the dependency audit with
+    only propext, Classical.choice and Quot.sound; after the author-header correction and the
+    mechanical port to the module system the tree was rebuilt from scratch and re-checked by
+    `tools/check_palomar.py` (audit, Challenge/Solution identity, axioms, no sorry).
 
 fidelity:
   divergences: >-
@@ -141,8 +143,8 @@ review:
     Agent review by Claude Opus 5.5 of the packaging, distinct from the mechanical verification:
     the agent checked that the Challenge statements and the seven reproduced definitions are
     textually identical to those of the library, that no global instance or notation in their
-    import context affects their elaboration, that the Challenge compiles, and that the library
-    sources are byte-identical to the header-corrected freeze. The mathematical development and
+    import context affects their elaboration, that the Challenge compiles, and wrote the
+    mechanical module-system port and the post-build checks. The mathematical development and
     the accompanying articles are the author's; no independent human review of the formalization
     has been performed yet.
 

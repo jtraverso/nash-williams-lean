@@ -43,8 +43,14 @@ statements that use them.
   `NashWilliams.Frac.exists_fractional_weights` (`RequestProject/Fractional/Final.lean`) and
   `NashWilliams.Frac.theorem_1_6_proof` (`RequestProject/FracStab/Main.lean`).
 - [`RequestProject/`](RequestProject) and [`PartitionedTriangleAbsorption/`](PartitionedTriangleAbsorption):
-  the 1,070 Lean modules of the proof (the import closure of the final assembly), byte-identical to
-  the source freeze `PAPER_I_LEAN_20261020_ALIGNED_v3`.
+  the Lean modules of the proof (the import closure of the final assembly), from the source freeze
+  `PAPER_I_LEAN_20261020_ALIGNED_v3`, ported to the Lean module system required by Palomar.
+- [`tools/`](tools): `port_to_module.py` (the port: it adds `module`, makes every import `public`
+  and opens `@[expose] public section` after the imports, leaving statements and proofs unchanged;
+  per-file SHA-256 before and after in `port_manifest.json`), `check_palomar.py` (the post-build
+  checks, report in `check_report.txt`) and `audit/AuditPaperIIAssembly.lean.in` (the
+  proof-dependency audit, moved out of the module tree because it is a `run_cmd` script that no
+  module imports).
 - [`comparator.json`](comparator.json): the theorems that are compared.
 - [`MATHLIB_DEFINITIONS.md`](MATHLIB_DEFINITIONS.md): verbatim copies of the Mathlib definitions
   used.
@@ -65,18 +71,20 @@ statements that use them.
   (`margin_four_colour_decomposition`). The non-extremal case uses a protected covering round
   (`roundUnivSpec124_holds`) followed by a terminal absorption construction. The matching input
   is the Ehard–Glock–Joos theorem (`Pseudorandom.theorem_1_2`).
-* **Audit.** `RequestProject/NW18/AuditPaperIIAssembly.lean` walks the proof-dependency closure
+* **Audit.** `tools/audit/AuditPaperIIAssembly.lean.in` walks the proof-dependency closure
   of the main theorem, requires the replacement inputs, forbids the earlier final theorem and the
   hypothesis `Theorem1316Statement`, and checks that only `propext`, `Classical.choice` and
   `Quot.sound` are used.
 
 ## Build evidence
 
-A recorded clean build of the 1,070 modules (Lean `v4.35.0-rc3`, Mathlib
+A recorded clean build of the 1,070 modules of the freeze (Lean `v4.35.0-rc3`, Mathlib
 `c55e6e786f49471c72fbddbec5415808896aec1e`) passed the audit above, with only the three standard
-axioms in the six final axiom queries and no `sorry` warning. The sources here are those of the
-freeze after an author-header correction that changes only the initial header comment of each
-file; the header-corrected sources were not rebuilt locally before this submission.
+axioms in the six final axiom queries and no `sorry` warning. The tree here is that freeze after
+an author-header correction and the mechanical port to the module system; it was rebuilt from
+scratch after the port, and `tools/check_palomar.py` then ran the audit, compared the elaborated
+Challenge and Solution declarations, checked the axioms of the three theorems and scanned for
+`sorry` (see `tools/check_report.txt`).
 
 ## Sources
 
