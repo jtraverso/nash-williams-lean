@@ -1,0 +1,167 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "The Nash–Williams triangle-decomposition theorem"
+  description: >-
+    A Lean 4 / Mathlib formalization of the Nash–Williams theorem for large graphs proved by
+    Delcourt and Postle: there is N such that every finite simple graph on n ≥ N vertices that is
+    triangle-divisible (3 divides the number of edges and every degree is even) and has minimum
+    degree at least 3n/4 has a triangle decomposition; together with Delcourt–Postle's fractional
+    threshold (every graph with 3n ≤ 4δ has a fractional triangle decomposition) and their
+    fractional stability theorem (with an additional order threshold). The proof follows their
+    extremal/non-extremal case division but does not assume their Theorem 13.16, whose proof is
+    assigned to an unpublished manuscript: the extremal residuals are decomposed with typed
+    absorption results developed in the same project, and the non-extremal case with a protected
+    covering-round argument. The development has 1,070 modules.
+  authors:
+    - "Juan Pablo Traverso Gianini"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Juan Pablo Traverso Gianini"
+
+classification:
+  arxiv: ["math.CO"]
+  msc2020: ["05C70", "05C35"]
+
+sources:
+  - title: "A Proof of Nash-Williams' Conjecture"
+    authors:
+      - "Michelle Delcourt"
+      - "Luke Postle"
+    id: "doi:10.48550/arXiv.2606.11178"
+    type: "preprint"
+    location: "arXiv:2606.11178 (2026), Theorems 1.4, 1.6 and 1.8"
+    relationship: "formalizes"
+    note: >-
+      The theorems formalized. Their Theorem 13.16, assigned to a separate manuscript, is not
+      assumed; the corresponding steps are replaced (see the scope).
+    license: "unknown"
+    author_endorsement: "not-contacted"
+  - title: "An unsolved problem concerning decomposition of graphs into triangles"
+    authors:
+      - "C. St. J. A. Nash-Williams"
+    type: "paper"
+    location: "Combinatorial Theory and its Applications III, North-Holland (1970), 1179–1183"
+    relationship: "background"
+    note: "The conjecture (minimum degree 3n/4); no DOI."
+    license: "all rights reserved"
+    author_endorsement: "n/a"
+  - title: "Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean"
+    authors:
+      - "Juan Pablo Traverso Gianini"
+    type: "preprint"
+    location: "Preprint 1.0 (2026)"
+    relationship: "formalizes"
+    note: "The accompanying article describing the replacement constructions and interfaces."
+    license: "unknown"
+    author_endorsement: "participated"
+  - title: "Triangle decompositions II: Robust absorption for typed triangles"
+    authors:
+      - "Juan Pablo Traverso Gianini"
+    type: "preprint"
+    location: "Preprint 1.0 (2026)"
+    relationship: "formalizes"
+    note: "The typed absorption inputs used for the extremal residuals."
+    license: "unknown"
+    author_endorsement: "participated"
+
+related_formalizations:
+  - id: "PALOMAR-2026-10-17-000004 (jtraverso/pseudorandom-hypergraph-matchings)"
+    relationship: "builds-on"
+    note: >-
+      The same author's formalization of Ehard–Glock–Joos, Pseudorandom hypergraph matchings; the
+      proof here uses its Theorem 1.2 through a local copy (`Pseudorandom.theorem_1_2`).
+
+status:
+  scope: >-
+    The Nash–Williams theorem is proved for all sufficiently large finite simple graphs (vertex
+    types in universe 0) with 3n ≤ 4δ(G) that are triangle-divisible; the fractional threshold
+    for every finite simple graph with 3n ≤ 4δ(G); fractional stability with an order threshold
+    n₀ that the original statement does not impose. The thresholds N, n₀, ε are existential and
+    not explicit. Delcourt–Postle's Theorem 13.16 is not assumed: the proof-dependency audit in
+    `RequestProject/NW18/AuditPaperIIAssembly.lean` forbids it and the earlier final theorem that
+    used it.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: []
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["Aristotle (Harmonic)"]
+      framework: "Aristotle CLI"
+      tool_setup: >-
+        Contributed, under the author's direction, to exploring approaches, searching for
+        counterexamples, developing proofs, and formalizing and reviewing them in Lean; its role
+        was not limited to translating finished proofs.
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "API-only"
+      prompting_notes: "Formal statements and proof plans supplied by the author."
+    - method: "agent"
+      models: ["Claude Opus 5.5", "ChatGPT/Codex (OpenAI)"]
+      framework: "Claude Code (Anthropic); Codex (OpenAI)"
+      tool_setup: >-
+        Used to explore and check arguments, to prepare the manuscripts and, for this package
+        (Claude Code), to write the Challenge/Solution pair, the documentation and the Palomar
+        packaging; the Challenge statements and definitions were checked textually against the
+        library and the Challenge was compiled (Lean v4.35.0-rc3, Mathlib
+        c55e6e786f49471c72fbddbec5415808896aec1e).
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "subscription-based"
+        hardware: "local machine"
+      prompting_notes: "Natural-language instructions in Spanish, directed by the author."
+  spend_usd: "not tracked"
+  notes: >-
+    The Lean development is AI-assisted under the author's direction and mechanically verified.
+    A recorded clean build of all 1,070 modules passed the dependency audit with only propext,
+    Classical.choice and Quot.sound; the sources here differ from that build only in the initial
+    author-header comment of each file and were not rebuilt locally before submission.
+
+fidelity:
+  divergences: >-
+    Graphs are Mathlib simple graphs on finite vertex types. A triangle decomposition is a finset
+    of 3-cliques such that every edge lies in exactly one of them; triangle-divisible means that
+    3 divides the number of edges and every degree is even; the degree condition is 3 · |V| ≤
+    4 · δ(G) in natural numbers. A fractional triangle decomposition is a nonnegative real
+    weighting of vertex sets such that for every edge the weights of the 3-cliques containing it
+    sum to 1. σ-extremal (Definition 12.2 of Delcourt–Postle) is: at least (1 − σ)n vertices have
+    degree at most (3/4 + σ)n, and some cut has at least (1 − σ)n²/4 edges. The stability theorem
+    carries an order threshold n₀ not present in the original. The main theorem quantifies over
+    vertex types in `Type` (universe 0).
+
+review:
+  status: "agent-reviewed"
+  reviewers:
+    - "Claude Opus 5.5 (AI agent in Claude Code, acting for the author)"
+  notes: >-
+    Agent review by Claude Opus 5.5 of the packaging, distinct from the mechanical verification:
+    the agent checked that the Challenge statements and the seven reproduced definitions are
+    textually identical to those of the library, that no global instance or notation in their
+    import context affects their elaboration, that the Challenge compiles, and that the library
+    sources are byte-identical to the header-corrected freeze. The mathematical development and
+    the accompanying articles are the author's; no independent human review of the formalization
+    has been performed yet.
+
+alignment:
+  namespace: "NashWilliamsTheorem"
+  statements:
+    - source: "Delcourt–Postle, Theorem 1.8 (Nash–Williams for large graphs)"
+      lean: "NashWilliamsTheorem.nash_williams"
+      module: "Challenge"
+      status: "proved"
+    - source: "Delcourt–Postle, Theorem 1.4 (fractional threshold)"
+      lean: "NashWilliamsTheorem.fractional_nash_williams"
+      module: "Challenge"
+      status: "proved"
+    - source: "Delcourt–Postle, Theorem 1.6 (fractional stability, with an order threshold)"
+      lean: "NashWilliamsTheorem.fractional_stability"
+      module: "Challenge"
+      status: "proved"
+
+acknowledgements: >-
+  Mathlib and the Lean community; Harmonic's Aristotle; Michelle Delcourt and Luke Postle, whose
+  proof is followed.

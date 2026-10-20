@@ -1,0 +1,25 @@
+name = "nash_williams_paper_i"
+version = "0.1.0"
+defaultTargets = ["Challenge", "Solution"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "c55e6e786f49471c72fbddbec5415808896aec1e"
+
+[[lean_lib]]
+name = "RequestProject"
+globs = ["RequestProject.+"]
+
+[[lean_lib]]
+name = "PartitionedTriangleAbsorption"
+roots = ["PartitionedTriangleAbsorption"]
+globs = ["PartitionedTriangleAbsorption", "PartitionedTriangleAbsorption.+"]
+
+[[lean_lib]]
+name = "Challenge"
+roots = ["Challenge"]
+
+[[lean_lib]]
+name = "Solution"
+roots = ["Solution"]
