@@ -1,0 +1,49 @@
+{
+  "paper": "PAPER_I",
+  "version": "preprint 1.0",
+  "doi": "10.5281/zenodo.23428173",
+  "canonical_repository": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release",
+  "canonical_commit": "2e9b44e159b832a9f9bff2b874b7e3a18081c531",
+  "files": [
+    {
+      "path": "docs/preprint-1.0/01_manuscript/PAPER_I_preprint_v1.0_en.pdf",
+      "source_path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf",
+      "sha256": "54a8ed1869dede261595c121d7f33cca20b8fb86e4ff0a65a651ba44be63139f",
+      "bytes": 150954
+    },
+    {
+      "path": "docs/preprint-1.0/01_manuscript/PAPER_I_preprint_v1.0_en.tex",
+      "source_path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.tex",
+      "sha256": "76fe027815414485a0f8cc9051bad86b69184ff133e049ed2fc870753d3685c7",
+      "bytes": 68927
+    },
+    {
+      "path": "docs/preprint-1.0/01_manuscript/PAPER_I_preprint_v1.0_en.md",
+      "source_path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md",
+      "sha256": "8b0cf39135424d6fe93ba42c29881c5b7c1e413005016fea32fd9bb0c672716d",
+      "bytes": 61642
+    },
+    {
+      "path": "docs/preprint-1.0/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "source_path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "sha256": "f0ea8646556989d69699b7fadc87ea76a4f062f7fd1d0e049579d59d17b00600",
+      "bytes": 74317
+    },
+    {
+      "path": "docs/preprint-1.0/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex",
+      "source_path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex",
+      "sha256": "78e6a783461c22c1e050addeb3eb5dc9f6b3d393e206c71c695fce4cd1a155e1",
+      "bytes": 38341
+    },
+    {
+      "path": "docs/preprint-1.0/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+      "source_path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+      "sha256": "9c5b87fca67ee86bc777e927b40a6e913e877a05e329fde8043f935883590ff0",
+      "bytes": 27764
+    }
+  ],
+  "scope": "Exact document copies; formalization companion describes the manuscript freeze, not a new validation of this Palomar port.",
+  "languages": [
+    "en"
+  ]
+}

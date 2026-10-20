@@ -119,3 +119,7 @@ lake build
 ```
 
 The full build compiles 1,070 project modules and takes many CPU hours.
+
+## Manuscript and companion copies
+
+The [preprint 1.0 documents](docs/preprint-1.0/README.md) include the article and its separate formalization companion in English, in PDF, TeX and Markdown. Their manifest binds each copy to the canonical series commit. Document licensing is CC BY 4.0; the Lean source licence is unchanged.
